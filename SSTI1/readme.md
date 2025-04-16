@@ -18,9 +18,9 @@ Mako (Python): <% print 7*7 %>
 
 ## Documentation
 
-[Documentation](images/1.png)
+[Documentation](/images/1.png)
 
-[Documentation](images/2.png)
+[Documentation](/images/2.png)
 
 Sekarang untuk menyelesaikan tantangan, kita perlu menemukan nilai bendera yang bisa kita dapatkan dengan melakukan injeksi perintah atau serangan eksekusi kode jarak jauh. Kami dapat mencari muatan yang tersedia sehubungan dengan Jinja2 untuk menjalankan injeksi perintah.
 
@@ -30,7 +30,7 @@ Mari kita berikan input seperti di bawah ini :
   {{self._templateReference__context.cycler .__ init __.__ global __. os.popen (‘whoami’) .read ()}}
 ```
 
-![App Screenshot](images/3.png)
+![App Screenshot](/images/3.png)
 
 Telah dikonfirmasi bahwa aplikasi rentan terhadap serangan injeksi perintah dan sekarang kita dapat mencari file flag menggunakan perintah ‘LS’ untuk mendaftar file yang tersedia di direktori Currect dengan memberikan input seperti di bawah ini -
 
@@ -38,7 +38,7 @@ Telah dikonfirmasi bahwa aplikasi rentan terhadap serangan injeksi perintah dan 
   {{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen(‘ls’).read() }}
 ```
 
-![App Screenshot](images/4.png)
+![App Screenshot](/images/4.png)
 
 Untungnya, kami memiliki file flag di folder yang sama sehingga kami tidak perlu mencarinya lebih lanjut dan kami dapat langsung membaca konten file flag menggunakan perintah CAT seperti yang ditunjukkan di bawah ini -
 
