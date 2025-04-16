@@ -18,9 +18,9 @@ Mako (Python): <% print 7*7 %>
 
 ## Documentation
 
-[Documentation](/images/1.png)
+![App Screenshot](/images/1.png)
 
-[Documentation](/images/2.png)
+![App Screenshot](/images/2.png)
 
 Sekarang untuk menyelesaikan tantangan, kita perlu menemukan nilai bendera yang bisa kita dapatkan dengan melakukan injeksi perintah atau serangan eksekusi kode jarak jauh. Kami dapat mencari muatan yang tersedia sehubungan dengan Jinja2 untuk menjalankan injeksi perintah.
 
